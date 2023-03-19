@@ -1,0 +1,13 @@
+.width-50-100 {
+    width: 50%;
+}
+
+@media (max-width: 1000px) {
+    .width-50-100 {
+        width: 100%;
+    }
+    .opacity-100-70 {
+        opacity: 70%;
+    }
+
+}

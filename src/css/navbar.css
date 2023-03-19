@@ -1,0 +1,80 @@
+/* Used for the nav bar buttons */
+.hover-button:hover {
+    color: var(--primary) !important;
+  
+  }
+.hire-button {
+  font-size: 26px!important;
+  font-weight: 900!important;
+}
+.hire-button:hover {
+  background-color: #be9e44!important;
+}
+  
+  .contact-button:hover{
+    color: var(--light) !important;
+    
+  }
+
+  .hover-grow { 
+    transition: all .2s ease-in-out; 
+    }
+
+  .hover-grow :hover {
+    transform: scale(1.1);
+  }
+
+.navbar {
+    /* background: var(--dark); */
+    background: linear-gradient(180deg, var(--dark) 80%, var(--light) 90%);
+
+}
+
+.icons {
+  filter: invert(75%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);
+  height: 40px;
+  margin: 10px;
+}
+
+.icon-invert {
+  /* filter: invert(100%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);  */
+  /* -webkit-filter: invert(100%); */
+}
+
+/* .social-container {
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* NEW STUFF */
+.offCanvas {
+  background-color: var(--dark)!important;
+}
+
+
+.menu-button-img {
+  filter: invert(75%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);
+  width: 3rem;
+
+}
+
+.menu-button {
+  all: unset;
+}
+
+@media (min-width: 1200px) {
+  .menu-button {
+    display: none;
+
+  }
+}
+

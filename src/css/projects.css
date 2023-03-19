@@ -1,0 +1,25 @@
+@import './scss/custom.css';
+
+.project-card-image {
+  /* max-width:250px; */
+  /* max-height:250px; */
+  /* width: 20px; */
+  /* height: 20px; */
+
+  /* width: auto; */
+  /* height: auto; */
+  object-fit: cover;
+}
+
+.project-card {
+    /* background-color: #e5d9b6 ; */
+    border-width: 10px;
+    border-color: #be9e44;
+    border-radius: 15px;
+
+}
+
+.album-icon {
+  filter: invert(75%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);
+
+}

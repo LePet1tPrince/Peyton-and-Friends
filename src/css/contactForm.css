@@ -1,0 +1,18 @@
+.contact-form__submit-btn {
+
+}
+
+.contact-form__label {
+    background-color: --dark;
+
+}
+
+.contact-form__input {
+    background-color: --primary;
+
+}
+
+.contact-form__message-input {
+    min-height: 300px;
+    /* resize: none; */
+}
