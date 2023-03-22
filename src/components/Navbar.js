@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 // import { Fade } from 'react-reveal';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import logo from '../images/Social media kit/Social-Media-Kit2_FB cover page.jpg'
 
 
 
@@ -21,16 +22,21 @@ const Navbar = () => {
     },
     {
       id: 2,
-      title: "Shop",
+      title: "About Us",
+      link: "/about"
+    },
+    {
+      id: 3,
+      title: "Our Clothes",
       link: "/inventory"
 
     },
     {
-      id: 3,
-      title: "Contact",
-      link: "/contact"
-
+      id: 4,
+      title: "Cart",
+      link: "/order"
     },
+    
   ]
     return (
       <div>
@@ -41,7 +47,10 @@ const Navbar = () => {
         <nav className="navbar navbar-expand py-3 shadow-lg fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <h3 className="text-primary rounded-4 mx-5 px-4 font-28 company-name-full hide-l-1400"><strong>Peyton & Friends</strong></h3>
+            <h3 className="text-primary rounded-4 mx-5 px-4 font-28 company-name-full hide-l-1400">
+              {/* <strong>Peyton & Friends</strong> */}
+              <img src={logo} className="navbar-logo"></img>
+            </h3>
             <h3 className="text-primary rounded-4 mx-5 px-4 font-36 company-name-abreviated hover-grow hide-l-1000 hide-g-1400"><strong>PDM</strong></h3>
 
             </Link>
@@ -54,7 +63,7 @@ const Navbar = () => {
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 hide-l-1000">
               {navbarLinks.map(link => {
                 return (
-                <li className="nav-item text-align-center nav-bar-item">
+                <li className="nav-item text-align-center nav-bar-item" key={link.id}>
                   <Link className="nav-link active fs-5 mx-3 px-4 rounded-4 hover-button align-text-bottom text-light hover-grow"
                     aria-current="page" 
                     to={link.link}>

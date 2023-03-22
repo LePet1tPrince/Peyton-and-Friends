@@ -1,6 +1,6 @@
 @import './scss/custom.css';
 
-.project-card-image {
+.inventory-img {
   /* max-width:250px; */
   /* max-height:250px; */
   /* width: 20px; */
@@ -9,7 +9,10 @@
   /* width: auto; */
   /* height: auto; */
   object-fit: cover;
+  height: 200px;
+  width: 100%;
 }
+
 
 .project-card {
     /* background-color: #e5d9b6 ; */
@@ -22,4 +25,15 @@
 .album-icon {
   filter: invert(75%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);
 
+}
+
+.inventory-image-detail {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.other-images{
+  height: 200px;
+  width: 200px;
 }
