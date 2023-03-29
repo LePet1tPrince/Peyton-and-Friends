@@ -41,14 +41,20 @@ export default function AppContext({ children }) {
       // console.log(change)
     };
 
+    function clearTempCart() {
+      setTempCart([])
+    };
+
   
 
     const InventoryContextValue = {
         inventory,
         selectedProduct,
         cart,
+        setCart,
         handleOrderAdd,
         tempCart,
+        clearTempCart,
         handleTempCartChange
     };
   return (
